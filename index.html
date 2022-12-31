@@ -55,7 +55,11 @@
     .p {
       text-align: justify;
     }
-    #myDIV
+
+    #myDIV {
+      display: none;
+    }
+    #btn
     {
       display: none;
     }
@@ -115,14 +119,16 @@
   </div>
   <br>
   <br>
-  <div id="hello">
-    <!-- <a href="file:///C:/Users/manikrajbhujel/OneDrive/Desktop/Web%20Programming/united2.html?"> --><button
-      class="w3-btn w3-round-xxlarge w3-blue w3-hover-shadow w3-right" onclick="myFunction()" >Contact
+
+  <div id="btn">
+    <button class="w3-btn w3-round-xxlarge w3-blue w3-hover-shadow w3-right" onclick="myFunction()" id="hello">Contact
       Us</button>
-    <!-- </a> -->
-  </div><br>
-  <br>
-  <a href="#"><button class="w3-btn w3-round-xxlarge w3-blue w3-hover-shadow w3-right">Support</button></a>
+    <br>
+    <br>
+    <a href="#"><button class="w3-btn w3-round-xxlarge w3-blue w3-hover-shadow w3-right">Support</button></a>
+  </div>
+  <br><br><button class="w3-btn w3-round-xxlarge w3-blue w3-hover-shadow w3-right" id="magic" onclick="show() ">+</button>
+  <!-- Contact us Field-->
   <div id="myDIV">
     <h3>Contact us</h3>
     <div class="container">
@@ -147,10 +153,14 @@
     </div>
   </div>
   <script>
-    function myFunction() 
-    {
+    function myFunction() {
       document.getElementById("myDIV").style.display = "block";
       document.getElementById("hello").style.display = "none";
+    }
+    function show()
+    {
+      document.getElementById("btn").style.display = "block";
+      document.getElementById("magic").style.display = "none";
     }
   </script>
   <br>
