@@ -15,39 +15,18 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="portfolio.css">
 
 <body>
     <title>Portfolio</title>
-    <style>
-        #img1 {
-            border: 9px solid yellow;
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        #img2 {
-            width: 40px;
-            height: 40px;
-        }
-
-        label {
-            color: white;
-        }
-        span
-        {
-            color: white; 
-            font-size: 18px;
-        }
-    </style>
     </head>
 
     <body class="img-fluid"
         style="background-image: url('https://brainwavesindia.com/wp-content/uploads/2021/01/brainwaves-website-pages-_06-01-2021-_-02.jpg');">
         <section class="container-fluid p-3" id="second">
-            <header style="width: 100%;">
+            <header style="width: 100%; ">
                 <div class="container-fluid" style="width: 100%;">
-                    <nav class="navbar navbar-expand-lg" data-bs-theme="#">
+                    <nav class="navbar navbar-expand-lg navbarr" data-bs-theme="#">
                         <div class="container-fluid">
                             <div>
                                 <a class="navbar-brand" href="#">
@@ -107,7 +86,7 @@
             </header>
             <div class="row align-items-start">
                 <div class="col container text-center" style="margin-top: 150px;;">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRg4MkQQqLkIN4XRnZ8rv1fF-8mT1bZcSuFw&usqp=CAU" class="rounded-circle" alt="profile" id="img1"><br>
+                    <img src="pawan.jpg" class="rounded-circle" alt="profile" id="img1"><br>
                     <label for="exampleFormControlInput1" class="form-label"
                         style="font-size: xx-large;color: rgb(201, 228, 49);">Pawan Ghimire</label><br>
                     <div>
@@ -160,25 +139,46 @@
                                 class="w3-btn w3-round-xxlarge" style="padding: 8px;">for more info...</button></a>
                     </p>
                 </div>
-                <section id="about">
+                <section id="about" class="bg-dark">
                     <div class="row align-items-start" style="margin: 20px;">
-                    <div class="col me-2">
-                    <h2 class="text-white">About Me</h2>
-                    <span> Upon Spending many of the years in the field i have gained the various knowledge about the
-                        basic things.The experience make me able to find out the capability of finding and solving the
-                        problems related to the different things with the web applications.</span><br><br>
-                    <span>It also help me to resolving the problem relating the resturent order system through website
-                        and taking out all the result of the day
-                        and provide me the effective way by the sucess of RestroMS Web Applications.
-                    </span><br><br>
-                    <span>Developing the invative idea and providing the  user friendly Websites.
-                        Leading the staff with the ideas and support in need just like the captain in the sports 
-                    </span>
-                </div>
-                <div class="col"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRg4MkQQqLkIN4XRnZ8rv1fF-8mT1bZcSuFw&usqp=CAU" alt="about" style="width: 100%; height: auto; border-radius: 12%;"></div>
-                </div>
+                        <div class="col me-2 text-fluid">
+                            <h2 class="text-white">About Me</h2>
+                            <span> Upon Spending many of the years in the field i have gained the various knowledge
+                                about the
+                                basic things.The experience make me able to find out the capability of finding and
+                                solving the
+                                problems related to the different things with the web applications.</span><br><br>
+                            <span>It also help me to resolving the problem relating the resturent order system through
+                                website
+                                and taking out all the result of the day
+                                and provide me the effective way by the sucess of RestroMS Web Applications.
+                            </span><br><br>
+                            <span>HTML5</span>
+                            <div class="progress mb-2">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 25%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                            <span>CSS 3</span>
+                            <div class="progress mb-2">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 50%"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span>Javascript</span>
+                            <div class="progress mb-2">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 75%"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span>jquery</span>
+                            <div class="progress mb-2">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"
+                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col"><img src="pawan.jpg" alt="about"></div>
+                    </div>
                 </section>
-                <section id="first">
+                <section id="first" style="background-color:rgba(68, 66, 71, 0.856)">
                     <form>
                         <div class="container-fluid">
                             <div class="text-center text-white">
@@ -198,11 +198,11 @@
                                 <label for="exampleFormControlTextarea1">Comments</label>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
-                            <button class="btn btn-primary text-white">Submit</button>
+                            <div><button class="btn btn-primary text-white">Submit</button><br><br></div>
                         </div>
                     </form>
                 </section>
-                <section>
+                <section class="bg-dark">
                     <!-- Copyright -->
                     <div class="text-right p-3 text-white">
                         © 2020 Copyright:
