@@ -1,0 +1,40 @@
+img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    max-width: 600px;
+    border-radius: 12%;
+    margin-left: 10px;
+}
+
+#img1 {
+    border: 9px solid yellow;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+#img2 {
+    width: 40px;
+    height: 40px;
+}
+
+label {
+    color: white;
+}
+
+span {
+    color: white;
+    font-size: 15px;
+}
+
+.navbarr {
+    position: fixed;
+    top: 0;
+    left: 1px;
+    width: 100%;
+    z-index: 999;
+    height: auto;
+    max-height: 60px;
+    background-color: rgb(66, 63, 63);
+}
